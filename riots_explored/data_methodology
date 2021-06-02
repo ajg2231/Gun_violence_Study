@@ -1,0 +1,9 @@
+Gun violence was tracked using data from the Gun Violence Archive.
+The sample periods were the 60 days following George Floyd's murder, compared to the same 60-day period in 2019.
+Shootings were plotted by neighborhood via address using this app: https://cityoflakes.maps.arcgis.com/apps/PublicGallery/map.html?appid=4172cd1ed97749a6a4623dd7aa5a246f&webmap=687b83365dd34e48b759ce3121ff4497
+If a gun violence incident happened entirely within one neighborhood, it was recorded as one full incident in that neighborhood in the data file.
+If it happened at the intersection of two neighborhoods, it was recorded as one half-incident for both neighborhoods in the data file.
+If it happened at the intersection of four neighborhoods, it was recorded as one quarter-incident for all four neighborhoods in the data file.
+This method was used to prevent any YOY change in gun violence being recorded between time periods purely from shootings happening at neighborhood intersections.
+Data on severity of rioting in Minneapolis by neighborhood was gathered using a catalogue of buildings damaged or destroyed in the first week following Floyd's murder here: https://bringmethenews.com/minnesota-news/a-list-of-the-buildings-damaged-looted-in-minneapolis-and-st-paul
+R was used to model the relationship between number of buildings damaged or destroyed, and the increase or decrease in gun violence between the 2019 and 2020 time periods.
