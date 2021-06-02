@@ -1,0 +1,23 @@
+---
+title: "Minneapolis_Riots_vs_Gun_Violence"
+---
+a <- file.choose()
+b <- read.csv(a)
+c <- lm(Shootings_Above_Modeled ~ Damaged_Buildings, data=b)
+summary(c)
+
+Call:
+lm(formula = Shootings_Above_Modeled ~ Damaged_Buildings, data = b)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-21.4275   0.0111   0.6782   1.3769  10.6225 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)       -0.17824    0.67843  -0.263    0.794
+Damaged_Buildings  0.05570    0.09993   0.557    0.579
+
+Residual standard error: 4.824 on 63 degrees of freedom
+Multiple R-squared:  0.004907,	Adjusted R-squared:  -0.01089 
+F-statistic: 0.3107 on 1 and 63 DF,  p-value: 0.5792
